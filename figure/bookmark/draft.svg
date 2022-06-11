@@ -1,0 +1,45 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  width='512'
+  height='512'
+>
+<style>
+  .background {
+    fill: white;
+  }
+  .triangle {
+    stroke-width: 16px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: /** 露草色 */ #3d87c3;
+    fill: /** 露草色 */ #3d87c3;
+  }
+  .polyline {
+    stroke-width: 16px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: /** 露草色 */ #3d87c3;
+    fill: none;
+  }
+  .transform {
+    transform: translateX(128px) translateY(128px);
+  }
+  .keyline {
+    stroke-width: 1px;
+    stroke: grey;
+    fill: none;
+  }
+</style>
+<rect width="100%" height="100%" class='background' />
+<polygon points='8,8 248,8 248,248' class='triangle transform' />
+<polyline points='8,8 8,248 128,128' class='polyline transform' />
+<rect x='0' y='0' width='512' height='512' class='keyline'/>
+<rect x='64' y='64' width='384' height='384' class='keyline'/>
+<rect x='80' y='128' width='352' height='256' class='keyline'/>
+<rect x='104' y='104' width='304' height='304' class='keyline'/>
+<rect x='128' y='80' width='256' height='352' class='keyline'/>
+<line x1='0' y1='0' x2='512' y2='512' class='keyline'/>
+<line x1='0' y1='512' x2='512' y2='0' class='keyline'/>
+<circle cx='256' cy='256' r='80' class='keyline'/>
+<circle cx='256' cy='256' r='176' class='keyline'/>
+</svg>

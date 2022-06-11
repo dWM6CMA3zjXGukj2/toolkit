@@ -1,0 +1,41 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+>
+  <style>
+    .background {
+      fill: #ffffff;
+    }
+    path {
+      stroke-width: 48px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #000000;
+      fill: none;
+    }
+    .j {
+      opacity: 0.5857864376;
+    }
+    .w {
+      opacity: 0.4142135624;
+    }
+    .keyline {
+      stroke-width: 1px;
+      stroke: #808080;
+      fill: none;
+    }
+  </style>
+  <rect width="100%" height="100%" class="background"/>
+  <path d="M 104 128 L 408 128 L 256 432 L 180 280" class="j"/>
+  <path d="M 104 128 L 180 280 L 256 128 L 332 280 L 408 128" class="w"/>
+  <rect x="0" y="0" width="512" height="512" class="keyline"/>
+  <rect x="64" y="64" width="384" height="384" class="keyline"/>
+  <rect x="80" y="128" width="352" height="256" class="keyline"/>
+  <rect x="104" y="104" width="304" height="304" class="keyline"/>
+  <rect x="128" y="80" width="256" height="352" class="keyline"/>
+  <line x1="0" y1="0" x2="512" y2="512" class="keyline"/>
+  <line x1="0" y1="512" x2="512" y2="0" class="keyline"/>
+  <circle cx="256" cy="256" r="80" class="keyline"/>
+  <circle cx="256" cy="256" r="176" class="keyline"/>
+</svg>

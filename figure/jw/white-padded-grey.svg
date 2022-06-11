@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+>
+  <style>
+    .background {
+      fill: #9e9e9e;
+    }
+    path {
+      stroke-width: 48px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #ffffff;
+      fill: none;
+    }
+    .l {
+      opacity: 0.4142135624;
+    }
+    .j {
+      opacity: 0.5857864376;
+    }
+  </style>
+  <rect width="100%" height="100%" class="background"/>
+  <path d="M 104 128 L 180 280 L 332 280" class="l"/>
+  <path d="M 104 128 L 408 128 L 256 432 L 180 280" class="j"/>
+</svg>

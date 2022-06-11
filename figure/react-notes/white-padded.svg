@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+>
+<path d="M 104 113.653
+         A 304 304, 0, 0, 1, 180 104
+         L 180 408
+         L 104 408"
+      style="stroke: none; fill: #ffffff;"
+/>
+<path d="M 218 104
+         A 190 190, 0, 0, 1, 294 119.862
+         L 294 332
+         A 38 38, 0, 0, 0, 218 332"
+      style="stroke: none; fill: #ffffff;"
+/>
+<path d="M 332 119.862
+         A 190 190, 0, 0, 1, 408 180
+         L 408 378.971
+         A 114 114, 0, 0, 1, 332 408"
+      style="stroke: none; fill: #ffffff;"
+/>
+</svg>

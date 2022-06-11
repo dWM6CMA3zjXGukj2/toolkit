@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+>
+<style>
+  .background {
+    fill: grey;
+  }
+  .triangle {
+    stroke-width: 16px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    fill: white;
+  }
+  .polyline {
+    stroke-width: 16px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    fill: none;
+  }
+  .transform {
+    transform: translateX(128px) translateY(128px);
+  }
+</style>
+<rect width="100%" height="100%" class="background" />
+<polygon points="8,8 248,8 248,248" class="triangle transform" />
+<polyline points="8,8 8,248 128,128" class="polyline transform" />
+</svg>

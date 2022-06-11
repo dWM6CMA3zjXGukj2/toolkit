@@ -1,0 +1,96 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+>
+  <style>
+    .background {
+      fill: #ffffff;
+      stroke: none;
+    }
+    .stretcher-tape {
+      fill: none;
+      stroke: #e60050;
+      stroke-width: 16px;
+      opacity: 0.7;
+    }
+    .rib {
+      stroke: #4d3239;
+      stroke-width: 1px;
+      stroke-linecap: round;
+      transform-origin: 256px 256px;
+    }
+    .rib:nth-of-type(1) {
+      transform: rotate(15deg)
+    }
+    .rib:nth-of-type(2) {
+      transform: rotate(45deg)
+    }
+    .rib:nth-of-type(3) {
+      transform: rotate(75deg)
+    }
+    .rib:nth-of-type(4) {
+      transform: rotate(105deg)
+    }
+    .rib:nth-of-type(5) {
+      transform: rotate(135deg)
+    }
+    .rib:nth-of-type(6) {
+      transform: rotate(165deg)
+    }
+    .rib:nth-of-type(7) {
+      transform: rotate(195deg)
+    }
+    .rib:nth-of-type(8) {
+      transform: rotate(225deg)
+    }
+    .rib:nth-of-type(9) {
+      transform: rotate(255deg)
+    }
+    .rib:nth-of-type(10) {
+      transform: rotate(285deg)
+    }
+    .rib:nth-of-type(11) {
+      transform: rotate(315deg)
+    }
+    .rib:nth-of-type(12) {
+      transform: rotate(345deg)
+    }
+    .canopy {
+      fill: #fffffc;
+      opacity: 0.7;
+      stroke: none;
+    }
+    .perimeter-tape {
+      fill: none;
+      stroke: #e60050;
+      stroke-width: 4px;
+      opacity: 0.7;
+    }
+    .ferrule {
+      fill: #4d3239;
+    }
+  </style>
+  <rect class="background" x="0" y="0" width="512px" height="512px"/>
+  <circle class="stretcher-tape" cx="256px" cy="256px" r="96px"/>
+  <defs>
+    <g id="rib">
+      <line x1="256px" y1="256px" x2="516px" y2="256px"/>
+    </g>
+  </defs>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <use href="#rib" class="rib"/>
+  <circle class="canopy" cx="256px" cy="256px" r="256px"/>
+  <circle class="perimeter-tape" cx="256px" cy="256px" r="254px"/>
+  <circle class="ferrule" cx="256px" cy="256px" r="16px"/>
+</svg>

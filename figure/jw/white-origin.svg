@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="352"
+  height="352"
+>
+  <style>
+    path {
+      stroke-width: 48px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #ffffff;
+      fill: none;
+    }
+    .j {
+      opacity: 0.5857864376;
+    }
+    .w {
+      opacity: 0.4142135624;
+    }
+  </style>
+  <path d="M 24 24 L 328 24 L 176 328 L 100 176" class="j"/>
+  <path d="M 24 24 L 100 176 L 176 24 L 252 176 L 328 24" class="w"/>
+</svg>

@@ -1,0 +1,159 @@
+%% LaTeX Template for ENGN8501
+%% Dylan Campbell <dylan.campbell@anu.edu.au>
+%% with some material from:
+%% Stephen Gould, "Paper Writing Cheat Sheet", tech. report, 2020
+
+\documentclass{article}
+
+\PassOptionsToPackage{sort&compress, numbers}{natbib}
+\usepackage[preprint]{neurips_2020}
+
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{tabularx}       % automatically calculates column widths with text wrapping
+\usepackage{multirow}       % allows merged rows in tables
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{enumitem}
+
+% Macros - add your own to speed up your workflow:
+\usepackage{xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\etal}{et al.\@\xspace}
+\newcommand*{\etc}{etc.\@\xspace}
+% Figure and Equation References:
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\eqnref}[1]{Equation~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\algref}[1]{Algorithm~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+% Mathematical operators and notation:
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\bx}{{\mathbf{x}}} % Using bold for vectors
+\newcommand{\by}{{\mathbf{y}}}
+\newcommand{\bz}{{\mathbf{z}}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+% Image Placeholders
+\newcommand{\placeholder}[2]{\framebox{\begin{minipage}{#1\columnwidth}\centering \vspace{#2}TODO\vspace{#2}\end{minipage}}}
+
+% Set path to search for images:
+\graphicspath{{./figures/}}
+
+% Correct bad hyphenation here:
+\hyphenation{net-works}
+
+% Define a new column type (centred text, column space divided equally to fill up the text width)
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\title{Your Project Title Here}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+\author{%
+	Name\\
+	Student ID\\
+	\And
+	Name\\
+	Student ID\\
+	\And
+	Name\\
+	Student ID\\
+	\And
+	Name\\
+	Student ID\\
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	An abstract for the report. Keep it short, concise, and polished. Avoid technical jargon and acronyms where possible. It may be the only thing a person reads of your paper! It should contain your (i) problem statement, (ii) contribution, (iii) results, and (iv) interpretation of results.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Your introduction section here.
+
+What problem are you trying to solve and why is it important? What are the broad types of methods that have been used to solve this problem previously? Itemise the contributions of your work at the end.
+
+Start telling your \textbf{story} (not a chronology of what you did). Describe the problem and its broad impact. Explain the \emph{scientific gap}, \ie, what technical aspects of the problem have not yet been solved. Clearly articulate the contributions of your work. Claims must be refutable and substantiated in the remainder of the paper. Summarize your approach and how it addresses the scientific gap. Do not waste space with ``the remainder of this paper is structured as follows'' for short papers; they are all the same!
+
+
+\section{Related Work}
+\label{sec:related_work}
+
+Your related work section here.
+
+How does your project relate to what other people have done previously? How is your approach different and why will it succeed? The focus is on \textit{your} work, how it differs from and improves on existing work. Cite relevant papers. For example, ``Syoo \textit{et al.} [12] propose a loss function based on their differentiable renderer. By doing XYZ, they are able to learn a robust model for ABC. However, their approach is limited by the granularity of the UVW, unlike our approach. Furthermore, we do not assume IJK, which is rarely valid in real images.''
+
+Discuss work that directly relates or motivates your work. Contrast the prior work to yours in addressing the scientific gap. Distill ideas, don't explain every detail. Don't make others look bad; give credit where it is due.
+
+Add citations with the command `\texttt{citep}' when not referring to the paper or authors directly \citep{campbell2019alignment} and with the command `\texttt{citet}' when directly referring to the paper or authors, as posited by \citet{campbell2019alignment}. Don't use citations as nouns, \eg, use ``Campbell \etal [1]\dots'' instead of ``[1] proposed\dots''
+
+\section{Your Approach (replace with something non-generic)}
+\label{sec:approach}
+
+What did you do? Outline your conceptual design and method, using flowcharts, equations, and algorithms where relevant.
+
+This is the payload of your paper. Keep the \textbf{story} going. Include everything that is necessary but focus on what is important---your paper must provide the details but first convey the ideas. Remember your audience. Defend your approach. Be precise---if your writing is sloppy the reader will assume your research was sloppy. Include examples and give intuitions. Explain all notation and acronyms. {\bf Tell the reader what they need to know when they need to know it.} Some common technical errors/tips:
+\begin{itemize}
+	\item Properly use the/an, then/than, plural/singular.
+	\item Use words for numbers between zero and ten.
+	\item Use standard mathematical notation when possible.
+	\item Don't use multiple terms to refer to the same thing.
+	\item Don't overload symbols and technical terms.
+	\item Don't squeeze in too much (whitespace is good).
+	\item Don't use abbrv. or informal language (like ``don't'').
+	\item Use ``we'' (the authors and reader) instead of ``I''.
+	\item Don't start a sentence with a mathematical symbol.
+\end{itemize}
+
+This part of the report may have multiple sections, and will probably have multiple sub-sections\dots
+
+\subsection{Network architecture}
+\label{sec:approach_architecture}
+
+\dots such as this one.
+
+\section{Results}
+\label{sec:results}
+
+Your results section here.
+
+How did you conduct your experiments and what are your results? How do they compare to state-of-the-art for this problem? You may want to include an ablation study that shows how important different aspects of your design are (e.g., removing your new loss function leads to a 3\% performance decrease). Provide both quantitative results (tables of numbers) and qualitative results (e.g., images, text). Videos can be added to the ZIP file containing code.
+
+Experiments must be reproducible---if possible release code and data. Don't just show good results, show poor ones too. Give intuitions into when your method works and when it fails. Show trends.
+
+\section{Discussion and Conclusion}
+\label{sec:conclusion}
+
+Your discussion and conclusions here. Can be split into two sections if sufficient space and content.
+
+Discuss your results and what they reveal about your approach. Provide conclusions and suggest avenues for future work on this problem.
+
+Summarise your work; don't just repeat what you've done. Give intuitions---often people are reading your paper to get ideas for their own research. It is very rare that a paper ends research in a field, discuss what work is left to do. The last sentence is the one your audience will remember most (if they've gotten this far); end on a high.
+
+And then \textbf{proofread} the whole thing!
+
+% Bibliography:
+\clearpage
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}
