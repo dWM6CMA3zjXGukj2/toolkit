@@ -1,1 +1,1 @@
-openssl rand -base64 12;
+openssl rand -base64 24 | tr -d "+/=" | cut -c1-16
