@@ -1,0 +1,6 @@
+patch:
+  "menu/page_size": 9
+  key_binder:
+    bindings:
+      - {accept: bracketleft, send: Page_Up, when: always}
+      - {accept: bracketright, send: Page_Down, when: always}
